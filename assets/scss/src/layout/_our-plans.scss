@@ -1,0 +1,146 @@
+section {
+    &#our-plans {
+        padding-top: 60px;
+        font-size: 20px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+        height: 100%;
+        justify-content: center;
+
+        p {
+            max-width: 800px;
+        }
+
+        h2 {
+            color: #1C4588;
+        }
+
+        .check-availability {
+            margin-top: 30px;
+            margin-bottom: 60px;
+            box-sizing: border-box;	
+            display: flex;
+            flex-direction: column;
+            height: 100%;	
+            width: 1256px;	
+            border: 1px solid #CFCFCF;	
+            border-radius: 3px;	
+            background-color: #FFFFFF;	
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);  
+            align-content: center; 
+            align-items: center;
+
+            .select-state {
+                box-sizing: border-box;
+                height: 90px;
+                width: 1257px;
+                border: 1px solid #CFCFCF;
+                background-color: #F1F1F1;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                padding: 20px 0;
+
+                span {
+                    font-size: 24px;
+                    font-weight: bold;
+                    padding: 0 24px;
+                }
+
+                img {
+                    height: 47px;
+                    width: 32px;
+                }
+
+                .state-select {
+                    position: relative;
+                    float: left;
+                    min-width: 335px;
+
+                    &:after {
+                        content: '<>';
+                        font: 17px "Consolas", monospace;
+                        color: #333;
+                        -webkit-transform: rotate(90deg);
+                        -moz-transform: rotate(90deg);
+                        -ms-transform: rotate(90deg);
+                        transform: rotate(90deg);
+                        right: 11px;
+                        /*Adjust for position however you want*/
+                        
+                        top: 18px;
+                        padding: 0 0 2px;
+                        border-bottom: 1px solid #999;
+                        /*left line */
+                        
+                        position: absolute;
+                        pointer-events: none;
+                    }
+
+                    .states {
+                        box-sizing: border-box;	
+                        height: 40px;	
+                        width: 335px;	
+                        border: 1px solid #999999;	
+                        border-radius: 3px;	
+                        background-color: #FFFFFF;
+                        padding: 0 5px;
+                        /* Here's the code we need */
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        -o-appearance: none;
+                        appearance: none;
+                    }
+                }
+
+            }
+
+            .plans {
+                display: flex;
+                padding: 50px;
+                font-size: 16px;
+                flex-shrink: initial;
+
+                > div {
+                    padding: 30px 60px;
+
+                    &.auto-plan {
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            background-color: #CFCFCF;
+                            position: absolute;
+                            width: 2px;
+                            height: 100%;
+                            right: 0;
+                            top: 0;
+                            display: block;
+                        }
+                    }
+                    
+                    
+                }
+
+                h2 {
+                    color: #333;
+                }   
+
+                img {
+                    height: 50px;
+                    width: auto;
+                }
+
+                .plan-content {
+                    line-height: 24px;
+                    width: 500px;
+                }
+            }
+        }
+    }
+}

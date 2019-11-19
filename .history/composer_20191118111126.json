@@ -1,0 +1,24 @@
+{
+	"name": "trinity-insight/fimc",
+	"description": "Core functionality for the FIMC Home and Auto 'Our Plans' page.",
+	"type": "wordpress-plugin",
+	"minimum-stability": "dev",
+	"authors": [
+		{
+			"name": "Trinity Insight",
+			"homepage": "https://trinityinsight.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"EventManager\\": "includes/FimcHomeAuto/"
+		},
+		"files": [
+			"includes/functions/taxonomy-helpers.php",
+			"includes/functions/helpers.php"
+		]
+	},
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}

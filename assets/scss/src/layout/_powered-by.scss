@@ -1,0 +1,29 @@
+section {
+     &#powered-by {
+        padding: 60px 0;
+        background-color: #F1F1F1;
+        justify-content: center;
+        align-items: center;
+       
+    
+        .powered-by-text {
+            font-size: 20px;
+            line-height: 32px;
+            width: 938px;
+        }
+    
+        .powered-by-icon {
+            height: 90px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            img {
+                height: 42px;	
+                width: 132px;
+            }
+        }
+    }
+}

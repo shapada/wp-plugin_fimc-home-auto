@@ -1,0 +1,3 @@
+/**
+ * Register Landing Page Blocks
+ */

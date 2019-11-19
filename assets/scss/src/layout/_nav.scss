@@ -1,0 +1,22 @@
+nav {
+    height: 110px;
+    max-height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .ha-logo {
+        width: 180px;
+        height: 64px;
+    }
+
+    & .here-to-help {
+        font-size: 18px;
+
+        & .phone-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1C4588;
+        }
+    }
+}
